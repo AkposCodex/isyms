@@ -1,0 +1,43 @@
+.background{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 90%;
+    background: #162844;
+    img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.statement{
+    text-align: justify;
+    width: 50%;
+    background: #11203A;
+    border-right: white solid 5px;
+    border-top: white solid 5px;
+    border-bottom: white solid 5px;
+    color: white;
+    margin-top: 2em;
+
+    .content{
+        width: auto;
+        padding-top: 80px;
+        padding-right: 120px;
+        padding-bottom: 120px;
+        padding-left: 60px;
+        // padding: 10px 0 50px 10px;
+        // margin: auto;
+        p{
+            font-size: 1.5rem;
+        }
+
+        h2{
+            font-weight: 600;
+        }
+    }
+
+}

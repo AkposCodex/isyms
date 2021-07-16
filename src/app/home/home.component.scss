@@ -1,0 +1,23 @@
+.body {
+    padding: 3em;
+    h1 {
+        width: 50%;
+        font-size: 3.5rem;
+        line-height: 1em;
+    }
+
+    h2{
+        font-weight: 600;
+      }
+
+    p{
+        width: 30%;
+    }
+}
+
+.background{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}

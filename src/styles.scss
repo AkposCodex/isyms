@@ -1,1 +1,31 @@
+@import "~@angular/material/theming";
+
+$syms-site-primary: mat-palette($mat-indigo);
+$syms-site-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$syms-site-warn: mat-palette($mat-red);
+
+$syms-site-typography: mat-typography-config(
+  $font-family: "Raleway",
+);
+$syms-site-theme: mat-light-theme(
+  (
+    color: (
+      primary: $syms-site-primary,
+      accent: $syms-site-accent,
+      warn: $syms-site-warn,
+    ),
+  )
+);
+
+@include angular-material-theme($syms-site-theme);
+@include mat-core($syms-site-typography);
+
 /* You can add global styles to this file, and also import other style files */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+
+}
