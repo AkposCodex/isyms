@@ -9,8 +9,10 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { ResearchComponent } from './research/research.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MatButtonModule } from "@angular/material/button";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

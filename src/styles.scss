@@ -1,5 +1,5 @@
 @import "~@angular/material/theming";
-
+@import "./assets/media-query.scss";
 $syms-site-primary: mat-palette($mat-indigo);
 $syms-site-accent: mat-palette($mat-pink, A200, A100, A400);
 
@@ -27,5 +27,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Raleway;
-
+  // @include xs {
+  //   backdrop-filter: brightness(0.5);
+  // }
 }

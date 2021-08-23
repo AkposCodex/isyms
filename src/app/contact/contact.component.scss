@@ -1,0 +1,61 @@
+body{
+    padding-top: 32px;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    padding: 32px;
+    background: #11203A;
+    color: white;
+
+    input{
+        margin-bottom: 16px;
+        border-radius: 2px;
+        height: 30px;
+        border: none;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    button{
+        width: fit-content;
+        display: flex;
+        align-self: flex-end;
+        margin: 16px;
+    }
+
+    .mat-button{
+        border: white 10px;
+        background: #304463;
+
+    }
+}
+
+aside{
+    color: white;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    background: #11203A;
+    text-align: right;
+}

@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+.research {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    aside {
+        margin: 24px;
+
+        mat-card {
+            margin: 32px 16px;
+            height: 40%;
+            overflow-y: scroll;
+            padding: 32px;
+            // mat-card-content {
+            // }
+        }
+
+        .mat-card {
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}
