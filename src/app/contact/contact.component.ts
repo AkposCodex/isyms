@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
+import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-contact',
@@ -8,12 +9,13 @@ import { FormControl, FormGroup } from "@angular/forms";
 })
 export class ContactComponent implements OnInit {
 
+  // login$: Observable<>
 
   contactForm = new FormGroup({
-    name: new FormControl("Brian O'Riley"),
-    email: new FormControl("brian-oreily@gmail.com"),
-    phno: new FormControl("08032200445"),
-    message: new FormControl("I would like to buy your work"),
+    name: new FormControl(""),
+    email: new FormControl(""),
+    phno: new FormControl(""),
+    message: new FormControl(""),
   })
   constructor(
   ) { }
@@ -22,7 +24,8 @@ export class ContactComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.contactForm.value)
+    const render = this.contactForm.value
+    console.log(render)
     this.contactForm.reset()
   }
 

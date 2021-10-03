@@ -2,58 +2,153 @@
     <h1>Our Team</h1>
     <p>A team of brilliant minds, capable of innovation and creativity. Unleashing the hidden treasures of the mind</p>
     <div class="team-members">
+        <mat-card (click)="openModal(asani)" matBadge="1" matBadgeSize="medium">
+            <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
+            <p mat-card-title>Emmanuel Oluwatobi Asani PhD</p>
+            <p mat-card-subtitle>Principal Researcher;<br> Lead, iSyms Group</p>
+            <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
+
+            <ng-template #asani>
+                <div class="modal-header">
+                    <h2>Emmanuel Oluwatobi Asani PhD</h2>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <!-- <h3>Emmanuel Oluwatobi Asani PhD</h3> -->
+                        Landmark University, Nigeria <br>
+                        Lead, iSyms Research Group<br>
+                        Principal Researcher<br>
+                        <hr>
+                        <p>
+                            Asani E. Oluwatobi is a faculty member of the Department of Computer Science, Landmark
+                            University, Omuaran, Nigeria. He holds a Bachelor of Science degree in Computer Science from
+                            the University
+                            of
+                            Ilorin and Master’s degree in Information Science from the University of Ibadan and Doctor
+                            of
+                            Philosophy degree from Landmark University.
+                            Asani has had a bright and progressive academic and professional career demonstrating great
+                            aptitude
+                            and attendant success in research and development.
+                        </p>
+                        <p>
+                            He is seasoned in conceiving computing and
+                            information systems theories (evidenced by scholastic publications), and initiatives in ICT
+                            diffusion and uptake.
+                        </p>
+                        <p>
+                            His research interest in information security has two components vis social and machine
+                            learning.
+                            The social component seeks to understand the social and organizational context of human
+                            behavioral
+                            trend as it relates to cybercrime. The machine learning component bothers on modelling of
+                            mathematical and statistical theories using soft computing tools to solve cybersecurity
+                            problems. He
+                            has attended and presented papers in both local and international journal with his research
+                            efforts
+                            appearing in local and international peer reviewed journals.
+                        </p>
+                        <p>
+                            In August 2015, he was honoured at the iSTEAM MINTT conference held at the University of
+                            Benin
+                            for
+                            his contributions to scientific research.
+                            He is a motivator, teacher and leader, well loved by his students and mentees. Asani is goal
+                            oriented and student to great leaders, who believe in God and are committed to selfless
+                            service,
+                            integrity and hard work as an important hallmark of success.
+                        </p>
+                    </article>
+
+                </div>
+            </ng-template>
+        </mat-card>
+
+        <mat-card (click)="openModal(longe)" matBadge="1" matBadgeSize="medium">
+            <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
+            <p mat-card-title>Professor Olumide Babatope LONGE</p>
+            <p mat-card-subtitle>Associate Dean</p>
+            <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
+
+            <ng-template #longe>
+                <div class="modal-header">
+                    <h2>Professor Olumide Babatope LONGE</h2>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        Professor Olumide Babatope LONGE FASI. MIEEE, MACM, MISACA, MCPN <br>
+                        Distinguished Fulbright, MIT-MISTI, Ui-McArthur & HLF Fellow <br>
+                        Associate Dean <br>
+                        School of Computational Sciences & Informatics <br>
+                        Academic city university college, Accra Ghana <br>
+                        Principal Researcher <br>
+                        <hr>
+                        <p>
+                            Professor LONGE Olumide holds a PhD degree in Computer Science (Information Systems/Cyber
+                            Security Specialization). He is an alumnus Fulbright Scholar, a Google Scholar, MacArthur
+                            Scholar and Seasoned in conceiving management information systems theories and initiatives
+                            in ICT diffusion and uptake. He was at a time the lead researcher on the New Partnership for
+                            Africa’s Development (NEPAD) Council’s Cyber Security Program for Africa. His research
+                            focuses on Cyber criminal profiling and the identification of causation factors,
+                            apprehension and treatments for cybercrime cases.
+                        </p>
+                    </article>
+
+                </div>
+            </ng-template>
+        </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
-            <p mat-card-title>Dr. Asani.O.Emmanuel</p>
-            <p mat-card-subtitle>Group Coordinator</p>
+            <p mat-card-title>Adebayo Omotosho</p>
+            <p mat-card-subtitle>Associate Dean</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Wihioka Nyekachi</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Adefemi Temitope</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Ibigbemi Joseph</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Ohale Emmanuel</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Haruna Aisha</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Adeloye Feranmi</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Akposibruke David</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
         <mat-card>
             <img mat-card-sm-image src="../../assets/placeholder.svg" alt="persons face">
             <p mat-card-title>Akinyele Joshua</p>
-            <p mat-card-subtitle>Principal Researcher</p>
+            <p mat-card-subtitle>Associate Researcher</p>
             <!-- <a href='https://dryicons.com/free-icons/profile-placeholder'> Icon by Dryicons </a> -->
         </mat-card>
     </div>

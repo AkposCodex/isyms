@@ -1,0 +1,66 @@
+img{
+    width: 30%;
+    // height: 10%;
+}
+
+.form-container {
+    // background-image: url("../shared/images/credit_background1.svg");
+    // background-size: contain;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    margin: auto;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+
+    form {
+        border: solid 2px #00000033;
+        border-radius: 5px;
+        width: auto;
+        background-color: white;
+
+        .required {
+            color: red;
+        }
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding: 2em;
+    }
+
+    .label {
+        margin-top: 16px;
+        display: block;
+
+        span {
+            padding: 3px;
+            color: red;
+            font-size: 20px;
+        }
+    }
+
+    input {
+        border: 0;
+        width: 30vw;
+        height: 30px;
+        border-bottom: solid lighten($color: #000000, $amount: 30%) 2px;
+    }
+
+    .error {
+        margin-top: 2px;
+        height: 40px;
+        background-color: #ff48486c;
+        color: lighten($color: #ff0000, $amount: 10%);
+        border: lighten($color: #ff0000, $amount: 10%) solid 2px;
+        border-radius: 5px;
+        padding: 0.5em 0 0 0.5em;
+    }
+
+    button {
+        border: none;
+        // padding: 10px;
+        margin: 10px 12px 0;
+        color: white;
+        background-color: #11203A;
+    }
+}

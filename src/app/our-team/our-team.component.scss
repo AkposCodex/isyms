@@ -1,40 +1,63 @@
-body{
+@import "../../assets/media-query.scss";
+
+body {
     padding: 16px;
     color: #162844;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
 }
 
-p{
+p {
     font-weight: 600;
     text-align: center;
 }
 
-.team-members{
+.team-members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include xs{
+        display: block;
+    }
 }
 
-mat-card{
-    img{
+mat-card {
+    display: block;
+    width: 60%;
+    text-align: center;
+    justify-self: center;
+    margin: 1em;
+
+    @include xs{
+        margin: 1.5em auto;
+    }
+
+    img {
         margin: 16px;
-        border: 3px #11203A solid;
+        border: 3px #11203a solid;
         border-radius: 50%;
         width: max-content;
         height: auto;
         padding: 8px;
     }
 
-    display: block;
-    width: min-content;
-    text-align: center;
-    justify-self: center;
-    margin: 1em;
+    .mat-card-subtitle{
+        font-weight: 700;
+        font-size: 16px;
+    }
 }
 
-.mat-card{
-    box-shadow: none;
+.modal-body{
+    article{
+        p{
+            font-weight: 400;
+        }
+    }
+}
+
+.mat-card {
+    // box-shadow: none;
 }

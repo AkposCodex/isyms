@@ -1,0 +1,17 @@
+<body>
+    <!-- <img src="../../assets/images/isyms 2.png" alt="Isyms logo"> -->
+    <div class="form-container">
+        <form action="post" [formGroup]="adminForm" #formDir="ngForm">
+            <h2>Admin Login</h2>
+            <label for="username" class="label"> Username</label>
+            <input type="text" name="username" formControlName="username"> <br>
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" formControlName="password"><br>
+            <button type="submit" mat-flat-button color="#11203A" (click)="submit()">Login</button>
+        </form>
+
+        <div>
+            <p>{{adminForm.value}}</p>
+        </div>
+    </div>
+</body>

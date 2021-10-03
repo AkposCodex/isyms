@@ -6,7 +6,7 @@ $syms-site-accent: mat-palette($mat-pink, A200, A100, A400);
 $syms-site-warn: mat-palette($mat-red);
 
 $syms-site-typography: mat-typography-config(
-  $font-family: "Raleway",
+  $font-family: "Lato",
 );
 $syms-site-theme: mat-light-theme(
   (
@@ -31,3 +31,6 @@ html {
   //   backdrop-filter: brightness(0.5);
   // }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";

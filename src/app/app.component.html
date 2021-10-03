@@ -1,12 +1,21 @@
 <header>
   <nav>
     <ul>
-      <li><a routerLink="" #home >Home</a></li>
-      <li><a routerLink="about" #about >About</a></li>
-      <li><a routerLink="team" #team >Our Team</a></li>
-      <li><a routerLink="research" #research >Research</a></li>
-      <li><a routerLink="contact" #contact >Contact</a></li>
+      <li><button mat-button routerLink="" #home>Home</button></li>
+      <li><button mat-button routerLink="about" #about>About</button></li>
+      <li><button mat-button routerLink="team" #team>Our Team</button></li>
+      <li>
+        <button mat-button [matMenuTriggerFor]="research" > Research </button>
+        <mat-menu #research="matMenu">
+          <button mat-menu-item routerLink="ongoing" #research>Ongoing</button>
+          <button mat-menu-item routerLink="research" #research>Published</button>
+        </mat-menu>
+      </li>
+      <li><button mat-button routerLink="contact" #contact>Contact</button></li>
     </ul>
   </nav>
 </header>
 <router-outlet></router-outlet>
+<footer>
+  <h1 style="text-align: center; padding: 16px; background-color: #11203a; color: white;margin: 0;">iSyMs</h1>
+</footer>

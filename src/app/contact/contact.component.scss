@@ -1,3 +1,5 @@
+@import "../../assets/media-query.scss";
+
 body{
     padding-top: 32px;
 }
@@ -13,26 +15,45 @@ h1{
     width: 45%;
     margin: auto;
     align-self: center;
+    font-weight: bold;
+
+    @include xs{
+        width: 80%;
+    }
 }
 
 form{
     display: flex;
     flex-direction: column;
     margin: auto;
+    border-bottom: whitesmoke 3px solid;
     width: 40%;
     padding: 32px;
     background: #11203A;
     color: white;
+
+    @include xs{
+        align-items: center;
+        width: 80%;
+    }
 
     input{
         margin-bottom: 16px;
         border-radius: 2px;
         height: 30px;
         border: none;
+
+        @include xs{
+            width: 100%;
+        }
     }
 
     textarea{
         resize: none;
+
+        @include xs{
+            width: 100%;
+        }
     }
 
     button{
