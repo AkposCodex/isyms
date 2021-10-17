@@ -1,3 +1,5 @@
+@import "../assets/media-query.scss";
+
 header {
     nav {
         display: flex;
@@ -5,16 +7,38 @@ header {
         padding: 10px 40px;
         background-color: transparent;
 
-        li, .mat-button{
+        li,
+        .mat-button {
             font-size: 24px;
             padding: 8px;
             // font-weight: bold;
             margin: 0 5px;
             display: inline-block;
 
-            a{
+            a {
                 color: black;
                 text-decoration: none;
+            }
+        }
+
+        #minButton {
+            display: none;
+        }
+
+        .navi {
+            ul {
+                button{
+                    display: inline-block;
+                }
+            }
+        }
+        @include xs {
+            #dash {
+                display: none;
+            }
+
+            #minButton {
+                display: block;
             }
         }
     }

@@ -1,11 +1,11 @@
 <header>
   <nav>
-    <ul>
+    <ul id="dash">
       <li><button mat-button routerLink="" #home>Home</button></li>
       <li><button mat-button routerLink="about" #about>About</button></li>
       <li><button mat-button routerLink="team" #team>Our Team</button></li>
       <li>
-        <button mat-button [matMenuTriggerFor]="research" > Research </button>
+        <button mat-button [matMenuTriggerFor]="research"> Research </button>
         <mat-menu #research="matMenu">
           <button mat-menu-item routerLink="ongoing" #research>Ongoing</button>
           <button mat-menu-item routerLink="research" #research>Published</button>
@@ -13,9 +13,22 @@
       </li>
       <li><button mat-button routerLink="contact" #contact>Contact</button></li>
     </ul>
+
+    <button mat-button [matMenuTriggerFor]="nav" id="minButton">2 NAv</button>
+    <mat-menu #nav="matMenu" class="navi">
+      <button mat-menu-item routerLink="" #home>Home</button>
+      <button mat-menu-item routerLink="about" #about>About</button>
+      <button mat-menu-item routerLink="team" #team>Our Team</button>
+      <button mat-menu-item [matMenuTriggerFor]="research"> Research </button>
+      <mat-menu #research="matMenu">
+        <button mat-menu-item routerLink="ongoing" #research>Ongoing</button>
+        <button mat-menu-item routerLink="research" #research>Published</button>
+      </mat-menu>
+      <button mat-menu-item routerLink="contact" #contact>Contact</button>
+    </mat-menu>
   </nav>
 </header>
 <router-outlet></router-outlet>
-<footer>
+<footer style="margin-top: 4em;">
   <h1 style="text-align: center; padding: 16px; background-color: #11203a; color: white;margin: 0;">iSyMs</h1>
 </footer>

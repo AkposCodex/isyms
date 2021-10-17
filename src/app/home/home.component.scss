@@ -4,6 +4,11 @@ body {
     height: 90%;
     background: transparent;
 
+    div{
+        height: 100%;
+        width: 100%;
+    }
+
     @include xs{
         height: 65vh;
     }
