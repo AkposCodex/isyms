@@ -1,7 +1,7 @@
 @import "../../assets/media-query.scss";
-body {
+main {
     padding: 2em;
-    height: 90%;
+    height: 100%;
     background: transparent;
 
     div{
@@ -10,7 +10,7 @@ body {
     }
 
     @include xs{
-        height: 65vh;
+        height: 100vh;
     }
     h1 {
         width: 50%;

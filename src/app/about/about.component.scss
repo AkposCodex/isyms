@@ -18,6 +18,7 @@ h1 {
 
     @include xs{
         font-size: 4rem;
+        padding: 0.2em 0;
     }
 }
 
@@ -30,6 +31,10 @@ h1 {
         padding: 2em;
         p {
             font-size: 1.5rem;
+
+            @include xs {
+                font-size: 1rem;
+            }
         }
 
         h2 {
