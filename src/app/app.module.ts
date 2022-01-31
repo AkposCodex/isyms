@@ -26,6 +26,7 @@ import { StoreModule } from '@ngrx/store';
 import { AdminComponent } from './admin/admin.component';
 import { adminReducer } from './store/reducers';
 import { ResearchOngoingComponent } from './research-ongoing/research-ongoing.component';
+import { ChaptersComponent } from './chapters/chapters.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ResearchOngoingComponent } from './research-ongoing/research-ongoing.co
     ResearchComponent,
     ContactComponent,
     AdminComponent,
-    ResearchOngoingComponent
+    ResearchOngoingComponent,
+    ChaptersComponent
   ],
   imports: [
     BrowserModule,
