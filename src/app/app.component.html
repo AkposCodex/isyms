@@ -15,7 +15,7 @@
       <li><button mat-button routerLink="chapter" #chapter>Call for Chapters</button></li>
     </ul>
 
-    <button mat-button [matMenuTriggerFor]="nav" id="minButton">2 NAv</button>
+    <button mat-button [matMenuTriggerFor]="nav" id="minButton">Navigation</button>
     <mat-menu #nav="matMenu" class="navi">
       <button mat-menu-item routerLink="" #home>Home</button>
       <button mat-menu-item routerLink="about" #about>About</button>
@@ -26,6 +26,7 @@
         <button mat-menu-item routerLink="research" #research>Published</button>
       </mat-menu>
       <button mat-menu-item routerLink="contact" #contact>Contact</button>
+      <button mat-menu-item routerLink="chapter" #contact>Call for Chapters</button>
     </mat-menu>
   </nav>
 </header>

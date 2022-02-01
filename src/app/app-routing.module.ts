@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'research', component: ResearchComponent },
   { path: 'ongoing', component: ResearchOngoingComponent},
   { path: 'admin', component: AdminComponent },
-  {path: 'chapter', component: ChaptersComponent}
+  { path: 'chapter', component: ChaptersComponent }
 ];
 
 @NgModule({
